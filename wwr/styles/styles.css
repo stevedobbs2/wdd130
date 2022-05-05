@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Roboto&family=Ubuntu&family=Shadows+Into+Light&display=swap');
+
+html {
+  background-color: #ece0ec;
+}
+
+#content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #513d54;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.75em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  color: #513d54;
+  padding: 10px;
+   font-size: 1.15em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+nav {
+  background-color: #513d54;
+  padding: 1em;
+}
+
+nav a {
+  color: #ece0ec;
+ line-height: 1.75em;
+padding: .25em .25em;
+text-decoration: none;
+}
+
+nav li {
+  font-size: 1em;
+  font-family: 'Shadows Into Light', sans-serif;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 0;
+  list-style: none;
+}
+
+nav a:hover {
+  background-color: #ece0ec;
+  color: #513d54;
+  border-radius: 4px;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 150px;
+ position: relative;
+margin: 5px;
+}
+
+.banner {
+  width: 100%;
+}
+
+
+.socialmedia {
+  padding: 10px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  margin: 15px 10px 0 0;
+}
+
+#info {
+font-size: .5em;
+margin-left: 10px;
+color: #ece0ec;
+}
+
+header {
+display: grid;
+grid-template-columns: 150px auto;
+align-items: center;
+background-color: #513d54;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr max-content repeat(3, max-content);
+  align-items: center;
+  justify-content: center;
+  line-height: 2.75em;
+  background-color: #513d54;
+}
+
+.pagetitle {
+  font-size: 2.25em;
+  margin: 10px 25px 0 25px;
+   font-family: 'Dancing Script', sans-serif;
+}

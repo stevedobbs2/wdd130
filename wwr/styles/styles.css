@@ -4,13 +4,29 @@ html {
   background-color: #ece0ec;
 }
 
+body {
+  background-color: #ece0ec;
+}
+
 #content {
-  max-width: 1000px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+  background-color: #513d54;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #513d54;
   padding: 10px;
   text-align: center;
@@ -21,12 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #513d54;
   padding: 10px;
-   font-size: 1.15em;
+  font-size: 1.15em;
   font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 nav {
   background-color: #513d54;
@@ -35,9 +48,10 @@ nav {
 
 nav a {
   color: #ece0ec;
- line-height: 1.75em;
-padding: .25em .25em;
-text-decoration: none;
+  line-height: 1.75em;
+  padding: .5em .5em;
+  text-decoration: none;
+  text-align: center;
 }
 
 nav li {
@@ -56,24 +70,50 @@ nav a:hover {
   background-color: #ece0ec;
   color: #513d54;
   border-radius: 4px;
-  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15); 
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+#hero-img {
+  width: 100%;
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+}
 
 img {
   max-width: 100%;
 }
 
-.logo {
-  width: 150px;
- position: relative;
-margin: 5px;
+.card-img {
+  max-width: 100%;
 }
 
-.banner {
-  width: 100%;
+footer {
+  display: grid;
+  grid-template-columns: 1fr max-content repeat(3, max-content);
+  align-items: center;
+  justify-content: center;
+  /*text-decoration: underline;*/
+  line-height: 2.75em;
+  background-color: #513d54;
 }
 
+footer h3 a:hover {
+  text-decoration: underline;
+  color: #f7f7f7;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+#info {
+  font-size: .5em;
+  margin-left: 10px;
+  color: #ece0ec;
+}
 
 .socialmedia {
   padding: 10px;
@@ -86,30 +126,45 @@ margin: 5px;
   margin: 15px 10px 0 0;
 }
 
-#info {
-font-size: .5em;
-margin-left: 10px;
-color: #ece0ec;
+.button-box {
+  text-align: center;
 }
 
-header {
-display: grid;
-grid-template-columns: 150px auto;
-align-items: center;
-background-color: #513d54;
+.book, .join {
+  background-color: #ece0ec;
+  text-decoration: none;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: 1fr max-content repeat(3, max-content);
-  align-items: center;
-  justify-content: center;
-  line-height: 2.75em;
+.book:hover, .join:hover {
   background-color: #513d54;
+  color: white;
+}
+
+.msg {
+  background-color: #ece0ec;
+}
+
+#background {
+  height: 725px;
+  background-color: #ece0ec;
+}
+
+main section {
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  position: relative;
+  margin: 5px;
+}
+
+.banner {
+  width: 100%;
 }
 
 .pagetitle {
   font-size: 2.25em;
   margin: 10px 25px 0 25px;
-   font-family: 'Dancing Script', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
 }

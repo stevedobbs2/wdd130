@@ -1,0 +1,15 @@
+main {
+    background-color: rgb(110, 108, 109);
+    text-align: center;
+}
+.circles img {
+    width: 100%;
+}
+
+.graphics img {
+    border: 10px solid rgb(66, 65, 65);
+    border-radius: 50%;
+    display:inline-block;
+    width: 15%;
+    margin: 20px 25px;
+}

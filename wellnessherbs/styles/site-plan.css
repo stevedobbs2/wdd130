@@ -2,18 +2,19 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Fresca&family=Mulish:wght@200&family=PT+Sans&family=Philosopher&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');*/
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #bb015e;
-  --secondary-color: #6ab489;
+  --primary-color: #6ab489;
+  --secondary-color: #bb015e;
   --accent1-color: #cbcfe2;
   --accent2-color: #d5c1af;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Fresca";
+  --paragraph-font: Philosopher, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #2D3D2B;  /* headlines on a white background */ 
@@ -24,7 +25,7 @@ Fonts are separated by a | */
   --nav-link-color: #f7f7f7;
   --nav-background-color: #6ab489;
   --nav-hover-link-color: black;
-  --nav-hover-background-color: #ece0ec;
+  --nav-hover-background-color: #d5c1af;
 }
 
 
@@ -105,12 +106,10 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav  {
   list-style-type: none;
   display: flex;
-
 }
+
 nav a {
   padding:1em;
   min-width: 120px;
@@ -173,4 +172,10 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.logo {
+  width: 100px;
+  position: relative;
+  margin: 5px;
 }

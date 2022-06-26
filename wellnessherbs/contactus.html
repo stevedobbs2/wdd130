@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Herbs | Contact Us</title>
+  <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <a href="index.html" id="logo_link"><img class="logo"
+        src="https://cdn.glitch.global/1d006632-9229-4141-b584-bfb8752c94c4/wellnessherbsicon.png?v=1654980155885"
+        alt="Wellness Herbs Logo"></a>
+
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="materiamedica.html">Materia Medica</a>
+            <a href="resources.html">Resources</a>
+            <a href="site-plan.html">Site Plan</a>
+          </nav>
+
+    </header>
+
+    <main>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+               </ul>
+
+        </form>
+
+
+    </main>
+    <footer>
+      <p id="info">Wellness Herbs &copy; 2022 • Steve Dobbs • WDD130-14</p>
+
+      <h3><a href="site-plan.html">Site Plan</a></h3>
+      <h3><a href="contactus.html">Contact Us</a></h3>
+
+      <div class="social">
+        <a class="socialmedia" href="https://facebook.com" target="_blank"><img class="socialicons"
+            src="https://cdn.glitch.global/5b776756-db5c-4657-96a4-095d001a5644/facebook.png?v=1651879387735"
+            alt="fb icon"></a>
+
+        <a class="socialmedia" href="https://twitter.com" target="_blank"><img class="socialicons"
+            src="https://cdn.glitch.global/5b776756-db5c-4657-96a4-095d001a5644/twitter.png?v=1651879387736"
+            alt="twitter icon"></a>
+
+        <a class="socialmedia" href="https://instagram.com" target="_blank"><img class="socialicons"
+            src="https://cdn.glitch.global/5b776756-db5c-4657-96a4-095d001a5644/instagram.png?v=1651879387736"
+            alt="instagram icon"></a>
+      </div>
+
+    </footer>
+  </div>
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+
+</html>

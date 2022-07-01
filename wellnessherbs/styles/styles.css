@@ -55,7 +55,7 @@ nav a {
 
 nav li {
   font-size: 1em;
-  font-family: 'Federo','Ubuntu', sans-serif;
+  font-family: 'Philosopher','Ubuntu', sans-serif;
 }
 
 nav ul {
@@ -126,7 +126,7 @@ img {
 
 .pagetitle {
   margin: 10px 25px 0 25px;
-  font-family: 'Federo','Roboto', sans-serif;
+  font-family: 'Fresca','Roboto', sans-serif;
 }
 
 .home-title {
@@ -200,17 +200,18 @@ img {
   margin: 15px 10px 0 0;
 }
 
-#medica-hero {
+/* Beginning of materimedica page css*/
+/*#medica-hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-}
+}*/
 
-#medica-grid {  
+.medica-grid {  
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
 
-#medica-grid p {
+.medica-grid p {
   margin: 0px;
   font-size: 1.1em;
 }
@@ -218,9 +219,10 @@ img {
 .medica-title {
   font-family: 'Fresca', 'Roboto', sans-serif;
   font-size: 2.8em;
-  margin-top: 50px;
+  margin: 20px 25px 0px 5px;
   color: black;
-  float: left;
+  justify-self: center;
+  max-width: 90%;
 }
 
 .medica-img {
@@ -266,12 +268,39 @@ img {
 
 }
 
+#medica-img2-info {
+  width: 95%;
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+
 #medica-img2 {
   width: 95%;
   justify-self: center;
   align-self: center;
   grid-column: 1/5;
   grid-row: 2/3;
+}
+
+#medica-def2 {
+  border: 3px solid black;
+  border-radius: 40px;
+  margin: 10px;
+  color: black;
+  background-color: white;
+  font-size: 2.5em;
+  width: 95%;
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  display: none;
+}
+
+#medica-img2-info:hover > #medica-def2 {
+  display: block;
 }
 
 #medica-img3 {
@@ -297,6 +326,7 @@ img {
   margin-left: 100px;
 }
 
+/* Beginning of resuources page css*/
 .resource-title {
   font-family: 'Fresca', 'Roboto', sans-serif;
   font-size: 2.8em;
@@ -450,10 +480,55 @@ img {
   font-size: 3em;
 }
 
-.button-box {
+/* Beginning of contactus page css*/
+.contact-grid {
+  background-color: #d5c1af;
+  display: grid;
+  /*grid-gap: 20px;*/
+  grid-template-columns: 25px 1fr 25px 2fr 25px;
+  /*grid-template-rows: repeat(9, minmax(45px, auto));*/
+}
+
+#contact-sec1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: left;
+  justify-self: center;
+}
+
+#contact-sec2 {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  margin-top: 40px;
+  text-align: left;
+  justify-self: center;
+}
+
+#contact-info {
+    margin-top: 50px;
+    text-align: left;
+    justify-self: center;
+    /*grid-column: 7/11;
+    grid-row: 1/3;*/
+}
+
+#contact-info a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 10px;
+}
+
+#contact-table {
+  justify-self: center;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+/*.button-box {
   text-align: center;
   margin: 25px;
-}
+}*/
 
 .msg p {
   font-size: .8em;
@@ -477,13 +552,14 @@ footer {
 }
 
 footer h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 15px;
 }
 
 footer h3 a {
   text-decoration: none;
-    color: #ece0ec;
+    /*color: #ece0ec;*/
+    color: #bb015e;
 }
 
 footer h3 a:hover {
@@ -521,11 +597,11 @@ footer h3 a:hover {
 
 form {
   /* Center the form on the page */
-  margin: 0 auto;
-  width: 400px;
+  margin: 10px;
+  width: 90%;
   /* Form outline */
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 1px solid black;
   border-radius: 1em;
 }
 
@@ -537,6 +613,7 @@ ul {
 
 form li + li {
   margin-top: 1em;
+  font-size: 1.1em;
 }
 
 label {
@@ -553,7 +630,7 @@ textarea {
   font: 1em sans-serif;
 
   /* Uniform text field size */
-  width: 300px;
+  width: 500px;
   box-sizing: border-box;
 
   /* Match form field borders */
@@ -571,7 +648,7 @@ textarea {
   vertical-align: top;
 
   /* Provide space to type some text */
-  height: 5em;
+  height: 10em;
 }
 
 .button {
@@ -583,6 +660,7 @@ button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   margin-left: .5em;
+  font-size: 1.2em;
 }
 
 
@@ -620,7 +698,7 @@ button {
     margin-top: 25px;
   }
 
-  .resource-grid, #medica-grid  {
+  .resource-grid, .medica-grid, .contact-grid  {
     display: block;
     width: auto;
   }
@@ -639,6 +717,12 @@ button {
 
   .about-content {
     display: block;
+  }
+
+  .textOverImage {
+    margin: 10px auto;
+    width: 95%;
+    height: 300px;
   }
 
 }

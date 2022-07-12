@@ -22,16 +22,11 @@
         <a href="site-plan.html">Site Plan</a>
       </nav>
     </header>
-    <!--<div id="medica-hero">
-
-      <section id="medica-msg">
-        <h1 class="medica-title"><span>Chamomile</span></h1>
-      </section>
-    </div>-->
+    
     <main class="medica-grid">
 
       <div id="medica-sec1">
-        <h1 class="medica-title">Chamomile</h1>
+        <h1 class="medica-title" id="myHeader">Chamomile</h1>
         <p><span class="medica-label">Scientific Name: </span>Chamaemelum nobile, Matricaria recutita</p>
         <p><span class="medica-label">Common Name(s): </span>German Chamomile, Garden Chamomile - also spelled “chamomile” - either spelling is correct (Chamomile in greek means “ground apple”)</p>
         <p><span class="medica-label">Note: </span>There are two different Chamomile plants.</p> 
@@ -52,12 +47,17 @@
           </ul>
       </div>
       <img class="medica-img" id="medica-img1" src="https://cdn.glitch.global/1d006632-9229-4141-b584-bfb8752c94c4/chamomiledrawing.png?v=1654979786294" alt="chamomile drawing" />
-      <!--<div class="textOverImage" id="medica-txt_img" style="background-image:url('https://cdn.glitch.global/1d006632-9229-4141-b584-bfb8752c94c4/chamomileflowers.png?v=1654979847601')"
-        data-text="Chamomile Flower Remarkably like daisies, fresh apple scent, solid solitary central disk, deep yellow color, petals silver-white to cream color.">
-      </div>-->
       <div id="medica-img2-info">
-        <img class="medica-img" id="medica-img2" src="https://cdn.glitch.global/1d006632-9229-4141-b584-bfb8752c94c4/chamomileflowers.png?v=1654979847601" alt="chamomile flowers" />
-        <div id="medica-def2">Chamomile Flower Remarkably like daisies, fresh apple scent, solid solitary central disk, deep yellow color, petals silver-white to cream color.</div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img id="medica-img2" src="https://cdn.glitch.global/1d006632-9229-4141-b584-bfb8752c94c4/chamomileflowers.png?v=1654979847601" alt="chamomile flowers">
+          </div>
+          <div class="flip-card-back">
+            <p id="medica-def2">Chamomile Flowers<br><br>Remarkably like daisies, fresh apple scent, solid solitary central disk, deep yellow color, petals silver-white to cream color.</p> 
+          </div>
+        </div>
+      </div>
       </div>
       <div id="medica-sec2">
         <p><span class="medica-label">Uses: </span>Medical Insomnia, anxiety, digestive problems of nervous origin.</p>
@@ -106,6 +106,21 @@
 
     </footer>
   </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 </body>
 
 </html>
